@@ -2,7 +2,7 @@
   "name": "@myboke/backend",
   "version": "0.1.0",
   "private": true,
-  "description": "MyBoke API — Business OS for East African merchants",
+  "description": "MyBoke API \u2014 Business OS for East African merchants",
   "license": "UNLICENSED",
   "scripts": {
     "dev": "nest start --watch",
@@ -77,7 +77,7 @@
       "@prisma/engines",
       "prisma",
       "esbuild",
-      "@swc/core"
+      "@scarf/scarf"
     ]
   }
 }

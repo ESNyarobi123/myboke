@@ -9,6 +9,7 @@ WORKDIR /app
 FROM base AS deps
 COPY package.json pnpm-lock.yaml* ./
 COPY prisma ./prisma
+COPY .npmrc ./
 RUN pnpm install --frozen-lockfile=false --prod=false
 
 # ── Build ────────────────────────────────────────────────────
