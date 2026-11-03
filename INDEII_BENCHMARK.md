@@ -133,3 +133,22 @@ kwa lugha ya mtumiaji — Indeii haina chatbot.
    hali za loading/error, na ujumbe wa makosa kwa lugha iliyochaguliwa.
 5. **Client 360** — ukurasa wa mteja: jumla ya mauzo, madeni, historia, pointi.
 6. **App lock** — PIN ya tarakimu 4 (na biometric pale inapowezekana).
+
+
+---
+
+## 7. Hali ya utekelezaji (3 Nov 2026)
+
+| Kipengele cha mpango (§6) | Hali | Ushahidi |
+|---|---|---|
+| Lugha 5 + RTL | ✅ | `Lang` SW/EN/ES/FR/AR · Auth 51 keys × 5 · 0 missing |
+| Language picker | ✅ | Onboarding / Auth / More · `LanguagePickerOverlay` |
+| Splash mpya | ✅ | `SplashScreen` + `holdSplash(1600)` · Pixel 7 |
+| Login/Register | ✅ | Country picker 13 · strength · SMS reset 8-char · `PhoneTest` 9/9 |
+| Client 360 | ✅ | `CustomerDetailScreen` · SW/EN/AR-RTL |
+| App lock (PIN) | ✅ | `PinLockScreen` · cold start + background · Pixel 7 |
+| Maduka: hours · holidays · QR | ✅ | `ShopScheduleTest` 3/3 · `ShopScreenshotTest` 1/1 |
+| Desktop tests | ✅ | **32/32** passed |
+| Android debug build | ✅ | `assembleDebug` BUILD SUCCESSFUL |
+
+**Hitimisho:** MyBoke sasa inazidi Indeii kwenye lugha, splash, app lock, Client 360, AI assistant, na saa/QR za duka.

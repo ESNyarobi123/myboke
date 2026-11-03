@@ -258,13 +258,13 @@ fun MoreScreen(state: AppState) {
                     icon = MbIcon.Doc,
                     title = t.about,
                     subtitle = "MyBoke 1.0.0",
-                ) { state.showSnack("MyBoke 1.0.0 · myboke.co.tz") }
+                ) { state.showSnack("MyBoke 1.0.0 · myboke.yunigo.online") }
                 DividerLine(Modifier.padding(horizontal = 16.dp))
                 SettingRow(
                     icon = MbIcon.Phone,
                     title = t.help,
-                    subtitle = "support@myboke.co.tz",
-                ) { state.showSnack("support@myboke.co.tz") }
+                    subtitle = "support@yunigo.online",
+                ) { state.showSnack("support@yunigo.online") }
             }
 
             Spacer(Modifier.height(14.dp))
@@ -338,7 +338,7 @@ private fun ServerDialog(state: AppState, onClose: () -> Unit) {
                 value,
                 { value = it },
                 t.server,
-                placeholder = "https://api.myboke.co.tz/v1",
+                placeholder = "https://apiboke.yunigo.online/v1",
                 keyboardType = KeyboardType.Uri,
             )
             Spacer(Modifier.height(14.dp))

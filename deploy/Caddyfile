@@ -1,0 +1,26 @@
+# MyBoke — Caddy reverse proxy
+# Web:  myboke.yunigo.online
+# API:  apiboke.yunigo.online
+
+myboke.yunigo.online {
+	encode gzip
+	root * /opt/myboke/deploy/web
+	file_server
+	try_files {path} /index.html
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		X-Frame-Options DENY
+	}
+}
+
+apiboke.yunigo.online {
+	encode gzip
+	reverse_proxy 127.0.0.1:4000
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+	}
+}

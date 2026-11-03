@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyBoke — Biashara Yako</title>
+  <meta name="description" content="MyBoke: POS, madeni, ripoti na AI kwa wafanyabiashara." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #04122f;
+      --blue: #0b37a1;
+      --royal: #0269e9;
+      --cyan: #0a9cbf;
+      --green: #16a760;
+      --cream: #f3f7fc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      color: white;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(10,156,191,.35), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(2,105,233,.45), transparent 50%),
+        linear-gradient(160deg, #04122f 0%, #0b37a1 48%, #0269e9 100%);
+    }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 22px 64px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 12px;
+      font-family: Manrope, sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+    }
+    .mark {
+      width: 42px; height: 42px; border-radius: 12px;
+      background: linear-gradient(135deg, var(--cyan), var(--green));
+      display: grid; place-items: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    .mark span { font-weight: 800; font-size: 18px; }
+    h1 {
+      font-family: Manrope, sans-serif;
+      font-size: clamp(2.2rem, 6vw, 3.6rem);
+      line-height: 1.05;
+      margin: 36px 0 14px;
+      letter-spacing: -0.03em;
+      max-width: 14ch;
+    }
+    p.lead {
+      font-size: 1.12rem;
+      opacity: .88;
+      max-width: 42ch;
+      line-height: 1.55;
+      margin: 0 0 28px;
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    a.btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 14px 20px; border-radius: 14px;
+      font-weight: 600; text-decoration: none;
+      transition: transform .15s ease, background .15s ease;
+    }
+    a.btn:hover { transform: translateY(-1px); }
+    a.primary { background: white; color: var(--blue); }
+    a.ghost {
+      background: rgba(255,255,255,.12);
+      color: white;
+      border: 1px solid rgba(255,255,255,.28);
+    }
+    .panel {
+      margin-top: 42px;
+      padding: 22px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.18);
+      backdrop-filter: blur(8px);
+    }
+    .panel h2 {
+      font-family: Manrope, sans-serif;
+      font-size: 1.05rem;
+      margin: 0 0 10px;
+    }
+    .panel code {
+      display: block;
+      font-size: .95rem;
+      opacity: .92;
+      word-break: break-all;
+    }
+    footer {
+      margin-top: 40px;
+      opacity: .65;
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark"><span>MB</span></div>
+      <div>MyBoke</div>
+    </div>
+    <h1>Biashara yako, kwa mpangilio.</h1>
+    <p class="lead">
+      POS, madeni, ripoti, ankara na mshauri wa AI — kwa wafanyabiashara wa Afrika Mashariki.
+      App inaunganishwa moja kwa moja na API ya uzalishaji.
+    </p>
+    <div class="actions">
+      <a class="btn primary" href="https://apiboke.yunigo.online/docs">Fungua API Docs</a>
+      <a class="btn ghost" href="https://apiboke.yunigo.online/v1/health">Angalia Health</a>
+    </div>
+    <div class="panel">
+      <h2>Endpoints</h2>
+      <code>Web · https://myboke.yunigo.online</code>
+      <code>API · https://apiboke.yunigo.online/v1</code>
+    </div>
+    <footer>© MyBoke · Yunigo</footer>
+  </div>
+</body>
+</html>

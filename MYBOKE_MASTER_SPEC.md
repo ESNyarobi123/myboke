@@ -85,6 +85,7 @@ node test/e2e/api.e2e.mjs   # server lazima iwe hai
 | `platform` ya UI: dashibodi, POS, bidhaa, wateja, madeni, ripoti, ankara, n.k. | ✅ inapanga + inapata data halisi |
 | **Kufuli ya app (PIN 4)** — inafunga kwenye kuanza upya *na* app inapoingia nyuma; kubadilisha/kuzima PIN | ✅ imethibitishwa kwenye Pixel 7 |
 | **Client 360** — wasifu mmoja: deni, jumla ya manunuzi, pointi, kikomo, mawasiliano (simu/WhatsApp), mauzo ya karibuni, malipo ya deni ndani ya ukurasa | ✅ imethibitishwa (SW/EN/AR-RTL) |
+| **Maduka: saa za kazi · likizo · QR PNG** (`ShopScheduleScreen` + `ShopQrSheet`) | ✅ `ShopScheduleTest` 3/3 + `ShopScreenshotTest` 1/1 |
 
 **Ushahidi wa mwisho (2 Nov 2026):**
 - `assembleDebug` → BUILD SUCCESSFUL; APK imesakinishwa kwenye Pixel 7.
