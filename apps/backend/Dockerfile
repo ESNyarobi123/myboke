@@ -2,7 +2,9 @@
 # MyBoke API — multi-stage Docker build
 # ─────────────────────────────────────────────────────────────
 FROM node:22-alpine AS base
-RUN corepack enable && apk add --no-cache openssl dumb-init
+RUN corepack enable \
+  && corepack prepare pnpm@9.15.9 --activate \
+  && apk add --no-cache openssl dumb-init
 WORKDIR /app
 
 # ── Deps ─────────────────────────────────────────────────────
@@ -10,7 +12,7 @@ FROM base AS deps
 COPY package.json pnpm-lock.yaml* ./
 COPY prisma ./prisma
 COPY .npmrc ./
-RUN pnpm install --frozen-lockfile=false --prod=false
+RUN pnpm install --frozen-lockfile=false --prod=false --config.dangerouslyAllowAllBuilds=true
 
 # ── Build ────────────────────────────────────────────────────
 FROM deps AS build
